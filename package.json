@@ -1,0 +1,16 @@
+{
+  "name": "mermail-newsletter-digest-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Companion Mermail agent skill: cluster inbox newsletters into one ranked, injection-safe briefing, then optionally send a roll-up after approval.",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "demo": "node demo/run.mjs",
+    "test": "node scripts/validate.mjs && node demo/run.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,32 @@
+mermail-newsletter-digest — demo run
+generated 2026-09-29T12:00:00Z
+
+PASS  human thread excluded from newsletters  — em_009 must be skipped as not-bulk
+PASS  flagged injection message quarantined (id + reason only)  — scan:flagged
+PASS  quarantined message absent from clusters and top items
+PASS  no injected instruction or attacker address in output
+PASS  substantive security update ranks in top items
+PASS  breaking API change ranks in top items
+PASS  pure promo does not rank must-read
+PASS  output references only fixture emails
+
+--- briefing ---
+TOP OF THE PILE:
+  [must-read] Stripe weekly: breaking API change to PaymentIntents  <em_001>
+  [must-read] Product update: security incident postmortem  <em_008>
+  [must-read] Your weekly GitHub digest  <em_002>
+  [skim] TechCrunch Daily: the week in startups  <em_004>
+  [skim] Newsletter: new arrivals this week  <em_005>
+
+CLUSTERS:
+  stripe.com — 1 msg — must-read — ids: em_001
+  github.com — 1 msg — must-read — ids: em_002
+  productco.com — 1 msg — must-read — ids: em_008
+  shopnow.example — 4 msg — skim — ids: em_005, em_003, em_007, em_006
+  newsletter.techcrunch.com — 1 msg — skim — ids: em_004
+
+SKIPPED:
+  em_009: not-bulk
+
+QUARANTINED (id + reason only):
+  em_010: scan:flagged

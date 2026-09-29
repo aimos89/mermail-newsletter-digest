@@ -1,0 +1,11 @@
+interface:
+  display_name: "Mermail Newsletter Digest"
+  short_description: "Cluster inbox newsletters into one ranked briefing, then optionally send a roll-up"
+  default_prompt: "Use $mermail-newsletter-digest when the job is summarizing newsletters, product updates, or automated digests from a Mermail inbox into one ranked briefing, optionally organizing bulk mail or sending a single roll-up after approval."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
